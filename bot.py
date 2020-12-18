@@ -12,4 +12,8 @@ async def on_ready():
 async def ping(ctx):
     await ctx.send('pong')
 
+@bot.command()
+async def suma(ctx, numUno: int, numDos: int):
+   await ctx.send(numOne + numTwo)
+
 bot.run('')
