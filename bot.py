@@ -6,7 +6,7 @@ bot = commands.Bot(command_prefix='-')
 async def on_ready():
 	actividad = discord.Game("Jugan2")
 	await bot.change_presence(status=discord.Status.online, activity=actividad)
-	print("Loggeado en ", bot.user)
+	print("Loggeado en", bot.user)
 
 @bot.command()
 async def ping(ctx):
