@@ -3,17 +3,17 @@ from discord.ext import commands
 					
 bot = commands.Bot(command_prefix='-') # PREFIJO DE EL BOT
 
-@bot.event
+@bot.event # EVENTO BOT INICICIADO
 async def on_ready():
-	actividad = discord.Game("Jugan2") # ESTADO DE EL BOT
+	actividad = discord.Game("Jugan2") 
 	await bot.change_presence(status=discord.Status.online, activity=actividad)
-	print("Loggeado en", bot.user) # BOT INICIADO
+	print("Loggeado en", bot.user) # MENSAJE HACIA LA CONSOLA DICIENDO QUE EL BOT YA ESTA INICIADO
 
 @bot.command() # COMANDO PING
 async def ping(ctx): 
     await ctx.send("Pong 🏓")
 
-@bot.command() # COMANDO 
+@bot.command() # COMANDO SUMA
 async def suma(ctx, sumNumUno: int, sumNumDos: int): 
     embed = discord.Embed(title=f"", description="", color=discord.Color.red())
     embed.add_field(name="Resultado de tu Suma", value=f"{sumNumUno + sumNumDos}")
