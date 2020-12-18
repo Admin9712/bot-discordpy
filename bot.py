@@ -13,15 +13,15 @@ async def ping(ctx):
     await ctx.send("Pong 🏓")
 
 @bot.command()
-async def suma(ctx, numUno: int, numDos: int):
+async def suma(ctx, sumNumUno: int, sumNumDos: int):
     embed = discord.Embed(title=f"", description="", color=discord.Color.red())
-    embed.add_field(name="Resultado de tu Suma", value=f"{numUno + numDos}")
+    embed.add_field(name="Resultado de tu Suma", value=f"{sumNumUno + sumNumDos}")
     await ctx.send(embed=embed)
 
 @bot.command()
-async def resta(ctx, numUno: int, numDos: int):
+async def resta(ctx, resNumUno: int, resNumDos: int):
     embed = discord.Embed(title=f"", description="", color=discord.Color.red())
-    embed.add_field(name="Resultado de tu Resta", value=f"{numUno - numDos}")
+    embed.add_field(name="Resultado de tu Resta", value=f"{resNumUno - resNumDos}")
     await ctx.send(embed=embed)
 
 @bot.command()
