@@ -14,7 +14,15 @@ async def ping(ctx):
 
 @bot.command()
 async def suma(ctx, numUno: int, numDos: int):
-   await ctx.send(numUno + numDos)
+    embed = discord.Embed(title=f"", description="", color=discord.Color.red())
+    embed.add_field(name="Resultado de tu Suma", value=f"{numUno + numDos}")
+    await ctx.send(embed=embed)
+
+@bot.command()
+async def resta(ctx, numUno: int, numDos: int):
+    embed = discord.Embed(title=f"", description="", color=discord.Color.red())
+    embed.add_field(name="Resultado de tu Resta", value=f"{numUno - numDos}")
+    await ctx.send(embed=embed)
 
 @bot.command()
 async def infoserver(ctx):
