@@ -1,16 +1,15 @@
 import discord
+from discord.ext import commands
 
-class MyClient(discord.Client):
-    async def on_ready(self):
-        print('Loggeado en', self.user)
+bot = commands.Bot(command_prefix='-')
+@bot.event
+async def on_ready():
+	actividad = discord.Game("Jugan2")
+	await bot.change_presence(status=discord.Status.online, activity=actividad)
+	print("Loggeado en ", bot.user)
 
-    async def on_message(self, message):
-        
-        if message.author == self.user:
-            return
+@bot.command()
+async def ping(ctx):
+    await ctx.send('pong')
 
-        if message.content == 'ping':
-            await message.channel.send('pong')
-
-client = MyClient()
-client.run('')
+bot.run('')
