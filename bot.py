@@ -31,4 +31,4 @@ async def infoserver(ctx):
     embed.add_field(name="Informacion de el Servidor", value=f"**__Nombre de el Servidor__**: {ctx.guild.name}\n **__ID de el Servidor__**: {ctx.guild.id}\n **__Servidor Creado el__**: {ctx.guild.created_at}\n **__Region de el Servidor__**: {ctx.guild.region}")
     await ctx.send(embed=embed)
 
-bot.run('') # LOGGEANDOSE A EL BOT
+bot.run('') # TOKEN DE EL BOT
