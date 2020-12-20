@@ -16,13 +16,13 @@ async def ping(ctx):
 @bot.command() # COMANDO SUMA
 async def suma(ctx, sumNumUno: int, sumNumDos: int): 
     embed = discord.Embed(title=f"", description="", color=discord.Color.red())
-    embed.add_field(name="Resultado de tu Suma", value=f"{sumNumUno + sumNumDos}")
+    embed.add_field(name="SUMA", value=f"**__OPERACION__**: {sumNumUno} + {sumNumDos}\n **__Resultado de la Operacion__** {sumNumUno + sumNumDos}")
     await ctx.send(embed=embed)
 
 @bot.command() # COMANDO RESTA
 async def resta(ctx, resNumUno: int, resNumDos: int):
     embed = discord.Embed(title=f"", description="", color=discord.Color.red())
-    embed.add_field(name="Resultado de tu Resta", value=f"{resNumUno - resNumDos}")
+    embed.add_field(name="RESTA", value=f"**__OPERACION__**: {resNumUno} - {resNumDos}\n **__Resultado de la Operacion__** {resNumUno - resNumDos}")
     await ctx.send(embed=embed)
 
 @bot.command() # COMANDO INFOSERVER
