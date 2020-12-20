@@ -25,16 +25,16 @@ async def resta(ctx, resNumUno: int, resNumDos: int):
     embed.add_field(name="RESTA", value=f"**__Operacion__**: {resNumUno} - {resNumDos}\n **__Resultado de la Operacion__** {resNumUno - resNumDos}")
     await ctx.send(embed=embed)
 
-@bot.command() # COMANDO INFOCANAL
-async def infocanal(ctx):
+@bot.command() # COMANDO INFOSERVER
+async def infoserver(ctx):
     embed = discord.Embed(title=f"", description="", color=discord.Color.red())
-    embed.add_field(name="Informacion de el este Canal", value=f"**__Nombre de el Canal__**: {ctx.channel.name}\n **__ID de el Canal__**: {ctx.channel.id}\n **__Canal Creado el__**: {ctx.channel.created_at}\n **__Tipo de Canal__**: {ctx.channel.type}\n **__Canal NSFW?__**: {ctx.channel.nsfw}\n **__Descripcion de el Canal__**: {ctx.channel.topic}")
+    embed.add_field(name="Informacion de el Servidor", value=f"**__Nombre de el Servidor__**: {ctx.guild.name}\n **__ID de el Servidor__**: **`{ctx.guild.id}`**\n **__Servidor Creado el__**: {ctx.guild.created_at}\n **__Region de el Servidor__**: {ctx.guild.region}")
     await ctx.send(embed=embed)
 
 @bot.command() # COMANDO INFOCANAL
 async def infocanal(ctx):
     embed = discord.Embed(title=f"", description="", color=discord.Color.red())
-    embed.add_field(name="Informacion de el este Canal", value=f"**__Nombre de el Canal__**: {ctx.channel.name}\n **__ID de el Canal__**: {ctx.channel.id}\n **__Canal Creado el__**: {ctx.channel.created_at}\n **__Tipo de Canal__**: {ctx.channel.type}\n **__Canal NSFW?__**: {ctx.channel.nsfw}")
+    embed.add_field(name="Informacion de el Canal", value=f"**__Nombre de el Canal__**: {ctx.channel.name}\n **__ID de el Canal__**: **`{ctx.channel.id}`**\n **__Canal Creado el__**: {ctx.channel.created_at}\n **__Tipo de Canal__**: {ctx.channel.type}\n **__Canal NSFW?__**: {ctx.channel.nsfw}\n **__Descripcion de el Canal__**: {ctx.channel.topic}")
     await ctx.send(embed=embed)
 
 bot.run('') # TOKEN DE EL BOT
