@@ -1,4 +1,4 @@
-[![BOTJSV2](https://github-readme-stats.vercel.app/api/pin/?username=Whoisadri2&repo=bot-discordpy&theme=dark)](https://github.com/Whoisadri2/bot-discordpy)<br/>
+[![BOTJSV2](https://github-readme-stats.vercel.app/api/pin/?username=Admin9712&repo=bot-discordpy&theme=dark)](https://github.com/Admin9712/bot-discordpy)<br/>
 | [DESCARGAR](https://github.com/Whoisadri2/bot-discordpy) | [WEB UTILIZADA](https://www.faztweb.com/curso/discord-bot-python/introducci%C3%B3n/) | [TUTORIAL](https://www.youtube.com/watch?v=RgZZaZTnp9I&t=327s) |
 | :---: | :---: | :---: |
 
